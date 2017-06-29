@@ -5,7 +5,7 @@ import { Hero } from './hero';
 
 @Injectable()
 export class HeroService {
-  private heroesUrl = 'http://angular-hero.herokuapp.com/heros';
+  private heroesUrl = 'https://angular-hero.herokuapp.com/heros';
   constructor(private  http: Http){}
 
   getHeroes(): Promise<Hero[]> {
