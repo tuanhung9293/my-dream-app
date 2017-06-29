@@ -11,7 +11,7 @@ export class HeroSearchService {
   constructor(private http: Http) {}
   search(term: string): Observable<Hero[]> {
     return this.http
-    .get(`http://angular-hero.herokuapp.com/search?name=${term}`)
+    .get(`https://angular-hero.herokuapp.com/search?name=${term}`)
     .map(response => response.json() as Hero[]);
   }
 }
